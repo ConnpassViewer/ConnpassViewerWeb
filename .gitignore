@@ -6,7 +6,7 @@
 
 # Ignore bundler config.
 Api/.bundle
-Api/vendor/*
+/Api/vendor/
 
 # Ignore the default SQLite database.
 Api/db/*.sqlite3
