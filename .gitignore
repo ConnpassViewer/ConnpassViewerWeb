@@ -5,25 +5,25 @@
 #   git config --global core.excludesfile '~/.gitignore_global'
 
 # Ignore bundler config.
-/Api/.bundle
-/Api/vendor/
+Api/.bundle
+Api/vendor/
 
 # Ignore the default SQLite database.
-/Api/db/*.sqlite3
-/Api/db/*.sqlite3-journal
+Api/db/*.sqlite3
+Api/db/*.sqlite3-journal
 
 # Ignore all logfiles and tempfiles.
-/Api/log/*
-/Api/tmp/*
+Api/log/*
+Api/tmp/*
 
 # Ignore uploaded files in development
-/Api/storage/*
+Api/storage/*
 
-/Api/node_modules
-/Api/yarn-error.log
+Api/node_modules
+Api/yarn-error.log
 
-/Api/public/assets
-/Api/.byebug_history
+Api/public/assets
+Api/.byebug_history
 
 # Ignore master key for decrypting credentials and more.
-/Api/config/master.key
+Api/config/master.key
