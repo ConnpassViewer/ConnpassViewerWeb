@@ -1,0 +1,21 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  title: MyString
+  catch: MyString
+  img_url: MyString
+  event_url: MyString
+  event_id: 1
+  started_at: 2018-06-21 11:52:10
+  ended_at: 2018-06-21 11:52:10
+  address: MyString
+
+two:
+  title: MyString
+  catch: MyString
+  img_url: MyString
+  event_url: MyString
+  event_id: 1
+  started_at: 2018-06-21 11:52:10
+  ended_at: 2018-06-21 11:52:10
+  address: MyString
