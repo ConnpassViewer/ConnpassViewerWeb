@@ -1,7 +1,7 @@
 class EventsController < ApplicationController
   before_action :set_event, only: [:show, :edit, :update, :destroy]
 
-   PER = 10
+  PER = 10
   # GET /events
   # GET /events.json
   def index
