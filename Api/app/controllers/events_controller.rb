@@ -1,10 +1,11 @@
 class EventsController < ApplicationController
   before_action :set_event, only: [:show, :edit, :update, :destroy]
 
+   PER = 10
   # GET /events
   # GET /events.json
   def index
-    @events = Event.all
+    @events = Event.page(params[:page]).per(PER)
   end
 
   # GET /events/1
