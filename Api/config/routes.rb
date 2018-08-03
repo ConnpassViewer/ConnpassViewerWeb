@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  root to: 'staticpage#index'
+  get '/about', to: 'staticpage#about'
   devise_for :admin_users, ActiveAdmin::Devise.config
   ActiveAdmin.routes(self)
   resources :events
