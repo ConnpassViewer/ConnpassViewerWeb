@@ -6,6 +6,10 @@
 # See: https://doc.scrapy.org/en/latest/topics/item-pipeline.html
 import sqlite3
 from datetime import datetime
+import sqlalchemy as sa
+from sqlalchemy.orm import sessionmaker
+from sqlalchemy.ext.automap import automap_base
+from sqlalchemy.inspection import inspect
 
 
 class ConnpassPipeline(object):
