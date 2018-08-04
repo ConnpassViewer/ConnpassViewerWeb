@@ -4,7 +4,6 @@
 #
 # Don't forget to add your pipeline to the ITEM_PIPELINES setting
 # See: https://doc.scrapy.org/en/latest/topics/item-pipeline.html
-import sqlite3
 from datetime import datetime
 import sqlalchemy as sa
 from sqlalchemy.orm import sessionmaker
