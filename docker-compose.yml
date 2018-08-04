@@ -1,0 +1,30 @@
+version: '3'
+services:
+  mysql:
+    image: mysql:5.7
+    ports:
+      - "3306:3306"
+    volumes:
+      - ./docker/volumes:/var/lib/mysql
+    environment:
+      MYSQL_ROOT_PASSWORD: password
+  app:
+    build: .
+    command: bundle exec rails s -p 3000 -b '0.0.0.0'
+    ports:
+      - 3000:3000
+    volumes:
+      - ./Api:/Api
+    depends_on:
+     - mysql
+  scrapy:
+    build: ./ConnpassScraper
+    ports:
+      - 5000:5000
+    volumes:
+      - ./ConnpassScraper:/ConnpassScraper
+    depends_on:
+     - mysql
+volumes:
+  mysql-data:
+    driver: local
