@@ -27,3 +27,6 @@ Api/.byebug_history
 
 # Ignore master key for decrypting credentials and more.
 Api/config/master.key
+
+# Ignore MySQL data directory
+docker/
